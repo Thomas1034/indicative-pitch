@@ -3,9 +3,9 @@
 	"id": "indicativepitch",
 	"version": "${version}",
 	"name": "Indicative Pitch",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Makes block breaking sounds higher pitched as the block gets closer to being broken.",
 	"authors": [
-		"Me!"
+		"Startraveler"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -15,15 +15,11 @@
 	"icon": "assets/indicativepitch/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.startraveler.indicativepitch.IndicativePitch"
-		],
 		"client": [
 			"com.startraveler.indicativepitch.IndicativePitchClient"
 		]
 	},
 	"mixins": [
-		"indicativepitch.mixins.json",
 		{
 			"config": "indicativepitch.client.mixins.json",
 			"environment": "client"
@@ -31,11 +27,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.13",
-		"minecraft": "~1.21.5",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"minecraft": ">=1.21.2 <=1.22",
+		"java": ">=21"
 	}
 }
